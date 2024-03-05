@@ -1,4 +1,4 @@
-/* Reset some default styling */
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,100 +6,64 @@
 }
 
 body, html {
+    width: 100%;
     height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
 }
 
-/* Style for the split background if needed */
-.split-background {
-    /* Implement split background if required */
+nav {
+    /* Add styles for your navigation bar */
 }
 
-/* Common styles for all sections */
-section {
-    padding: 2rem 5%;
-    text-align: center;
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: #333; /* Change to match the background color you want */
 }
 
-/* Header styles */
-.header {
-    background: linear-gradient(to bottom right, #4e8ec4, #9db8d2);
+.hero-text {
+    max-width: 50%;
     color: white;
-    padding: 50px 0;
-    text-align: center;
 }
 
-
-/* Intro section styles */
-.intro h1 {
-    margin-bottom: 0.5rem;
+.hero-text h1 {
     font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
-.intro p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
+.hero-text p {
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
 
-/* Buttons styles */
-button {
-    font-size: 1rem;
-    padding: 0.75rem 1.5rem;
-    background: #ffc107; /* Bootstrap yellow for buttons */
-    color: #333;
-    border: none;
-    border-radius: 0.3rem;
-    cursor: pointer;
-    margin-right: 0.5rem;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #e0a800;
-}
-
-/* Social media icons styles */
-.social-icons a {
-    display: inline-block;
-    padding: 0.5rem;
-    margin: 0 0.25rem;
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #ff4500; /* Example button color, change as needed */
     color: white;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 
-/* Individual section styles */
-.about-me,
-.work-experience,
-.projects,
-.contact-info {
-    background-color: rgba(255, 255, 255, 0.85);
-    margin: 1rem 0;
-    border-radius: 10px;
-    color: #333;
+.hero-image {
+    /* Style your hero image here */
 }
 
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
+/* Additional styles for other elements... */
 
-footer p {
-    margin: 0;
-}
-
-/* Responsive design */
+/* Responsive styles */
 @media (max-width: 768px) {
-    .intro h1 {
-        font-size: 2rem;
+    .hero {
+        flex-direction: column;
     }
 
-    .intro p {
-        font-size: 0.9rem;
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        margin-top: 20px;
     }
 }
