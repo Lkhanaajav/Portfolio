@@ -1,96 +1,97 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('pic.png'); 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* This will give a parallax-like effect */
-    color: #ffffff;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    text-align: center;
+    box-sizing: border-box;
 }
 
-.container {
-    max-width: 1170px; /* Adjusted to match typical modern site widths */
-    margin: 0 auto;
-    padding: 20px;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e2d3b;
+    color: white;
+    line-height: 1.6;
 }
 
 header {
-    padding: 50px 0;
-    background: none; /* Removing gradient to let the background image show */
-    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+    background-color: #2b3d4f;
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
 header p {
-    font-size: 1.2em;
-    margin-top: -10px;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    color: #4ad9ca;
 }
 
-.section {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-    border-radius: 15px; /* Rounded corners */
-    padding: 40px;
-    margin: 20px auto; /* Centered with automatic margins */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    color: #333; /* Dark color for text */
-    max-width: 90%;
+main {
+    padding: 2rem;
 }
 
-h2 {
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #4ad9ca;
+}
+
+section p, section ul {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+section ul {
+    list-style: none;
+}
+
+section li {
+    margin-bottom: 0.5rem;
+}
+
+section a {
     color: #ffffff;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-p, li {
-    color: #333; /* Dark color for text inside sections for better readability */
-}
-
-a, .section a {
-    color: #654ea3; /* Color for links */
     text-decoration: none;
 }
 
-a:hover, .section a:hover {
+section a:hover {
     text-decoration: underline;
 }
 
-button {
-    background-color: #4ad9ca; /* Buttons matching the link color */
-    color: #ffffff;
-    padding: 10px 20px;
-    border: 2px solid #ffffff; /* White border for buttons */
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-}
-
-button:hover {
-    background-color: #3ac9b0;
-}
-
 footer {
-    background: #654ea3; /* Footer background to match the style of the header */
+    background-color: #2b3d4f;
     color: #ffffff;
-    padding: 10px 0;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
     margin: 0;
-    font-size: 0.8em;
+    font-size: 1rem;
 }
 
+/* Add media queries for responsiveness */
 @media only screen and (max-width: 768px) {
     header h1 {
-        font-size: 2em;
+        font-size: 2rem;
     }
 
-    header p, .section p, li, a {
-        font-size: 1em;
+    header p {
+        font-size: 1.2rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
     }
 }
