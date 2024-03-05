@@ -1,92 +1,104 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('pic.png'); /* Add your background image here */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: #ffffff;
+/* Reset some default styling */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Style for the split background if needed */
+.split-background {
+    /* Implement split background if required */
+}
+
+/* Common styles for all sections */
+section {
+    padding: 2rem 5%;
     text-align: center;
 }
 
-.container {
-    max-width: 1170px; /* Adjusted to match typical modern site widths */
-    margin: 0 auto;
-    padding: 20px;
+/* Header styles */
+.header {
+    background: linear-gradient(to bottom right, #ff758c, #ff7eb3);
+    color: white;
+    padding: 50px 0;
+    text-align: center;
 }
 
-header {
-    padding: 2rem 0;
-    background: rgba(0, 0, 0, 0.7); /* Dark transparent overlay for better readability */
-    color: #ffffff;
-}
-
-header h1 {
-    font-size: 2.5em;
+/* Intro section styles */
+.intro h1 {
     margin-bottom: 0.5rem;
+    font-size: 2.5rem;
 }
 
-header p {
-    font-size: 1.2em;
-    margin-top: -10px;
+.intro p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
 }
 
-.section {
-    background: rgba(255, 255, 255, 0.1); /* Light transparent overlay for section backgrounds */
-    border-radius: 15px; /* Rounded corners */
-    padding: 40px;
-    margin: 20px 0; /* Space between sections */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    color: #ffffff; /* White text color */
+/* Buttons styles */
+button {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: #ffc107; /* Bootstrap yellow for buttons */
+    color: #333;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    transition: background-color 0.3s ease;
 }
 
-.section h2 {
-    color: #ffffff;
-    margin-bottom: 1rem;
+button:hover {
+    background-color: #e0a800;
 }
 
-.section p, .section li, .section a {
-    color: #ffffff; /* White text color for better readability */
-    margin-bottom: 0.5rem;
+/* Social media icons styles */
+.social-icons a {
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0 0.25rem;
+    color: white;
 }
 
-.section a {
-    color: #4ad9ca; /* Bright color for links to stand out */
-    text-decoration: none;
-    margin-bottom: 1rem;
+/* Individual section styles */
+.about-me,
+.work-experience,
+.projects,
+.contact-info {
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 1rem 0;
+    border-radius: 10px;
+    color: #333;
 }
 
-.section a:hover {
-    text-decoration: underline;
-}
-
+/* Footer styles */
 footer {
-    background: rgba(0, 0, 0, 0.7);
-    color: #ffffff;
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 1rem;
-    position: relative;
+    padding: 1rem 0;
+    position: absolute;
     bottom: 0;
     width: 100%;
 }
 
 footer p {
     margin: 0;
-    font-size: 0.8em;
 }
 
-/* Media queries for responsiveness */
-@media only screen and (max-width: 768px) {
-    header h1 {
-        font-size: 2em;
+/* Responsive design */
+@media (max-width: 768px) {
+    .intro h1 {
+        font-size: 2rem;
     }
 
-    header p, .section p, .section li, .section a {
-        font-size: 1em;
-    }
-
-    .section {
-        padding: 20px;
+    .intro p {
+        font-size: 0.9rem;
     }
 }
