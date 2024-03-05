@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('pic.png'); /* Replace with the path to your background image */
+    background-image: url('pic.png'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* This will give a parallax-like effect */
