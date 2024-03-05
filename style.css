@@ -1,55 +1,51 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #1e3c72; /* Dark blue background for a rich look */
-    color: #d0d0d0; /* Lighter text color for better contrast */
+    background: #0d1238; /* Dark blue/purple background */
+    color: #ffffff;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1170px; /* Adjusted to match typical modern site widths */
     margin: 0 auto;
     padding: 20px;
 }
 
 header {
     padding: 50px 0;
-    background: linear-gradient(145deg, #2b5876, #4e4376); /* Gradient for a more vibrant header */
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to right, #654ea3, #eaafc8); /* Vibrant gradient for header */
+    color: #ffffff;
 }
 
 header h1 {
     font-size: 2.5em;
-    color: #a2c4c9; /* Light cyan color for the title */
 }
 
 header p {
     font-size: 1.2em;
-    color: #a2c4c9; /* Same light cyan for subtitle */
     margin-top: -10px;
 }
 
 .section {
-    background: rgba(255, 255, 255, 0.05); /* Light transparent overlay for readability */
     margin-bottom: 2em;
     padding: 20px;
-    border-left: 5px solid #4e4376; /* Vibrant purple border for sections */
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    text-align: left;
 }
 
 h2 {
-    color: #4e4376; /* Header titles in vibrant purple */
+    color: #ffffff;
+    font-size: 2em;
     margin-bottom: 10px;
 }
 
 p, li {
-    color: #d0d0d0; /* Lighter grey text for readability */
-    text-align: left;
+    color: #dcdcdc; /* Lighter grey for readability */
 }
 
 a {
-    color: #a2c4c9; /* Links in light cyan to stand out */
+    color: #4ad9ca; /* Bright color for links to stand out */
     text-decoration: none;
 }
 
@@ -57,13 +53,24 @@ a:hover {
     text-decoration: underline;
 }
 
+button {
+    background-color: #4ad9ca; /* Buttons matching the link color */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #3ac9b0; /* Darker shade on hover */
+}
+
 footer {
-    background: #2b5876; /* Footer with a solid dark blue to match the gradient */
-    color: #a2c4c9;
+    background: #654ea3; /* Footer background to match the header gradient */
+    color: #ffffff;
     padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
 footer p {
@@ -71,16 +78,12 @@ footer p {
     font-size: 0.8em;
 }
 
-@media only screen and (max-width: 600px) {
-    .container {
-        padding: 5px;
-    }
-
+@media only screen and (max-width: 768px) {
     header h1 {
         font-size: 2em;
     }
 
-    header p {
+    header p, .section p, li, a {
         font-size: 1em;
     }
 }
